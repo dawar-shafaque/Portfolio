@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+} 
+
+header{
+    padding: 16px;
+}
+
+header nav >a{
+    margin: 16px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+header nav >a:hover{
+    text-decoration: underline;
+    /* background-color: hsl(0deg 0% 50% / 48%); */
+}
+
+
+/* header nav >a:visited{
+    color: royalblue;
+} */
+
+footer{
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid;
+}
+
+.container{
+    padding: 16px;
+}
+/* immediate children of container */
+/* if we write .container >div > h2{  then we target just the direct descendants of the parent div and not the nested divs*/
+.container >section > h2{ 
+    text-align: center;
+} 
+
+.intro{ 
+    margin: -16px;
+    padding: 16px;
+    background-color: rgb(53, 51, 51);
+    color: white;
+    text-align: center;
+}
+#profile{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.social img{
+    height: 20px;
+    width: 20px;
+}
+
+.social a{
+    text-decoration: none;
+    margin: auto 16px;
+}
+table, tr, td,th {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th{
+    padding: 8px;
+}
+td{
+    padding: 8px 0px 8px 140px;
+}
+p{
+    font-size: 1.5rem;
+}
+li{
+    font-size: 1.5rem;
+}
+table{
+    width: 100%;
+} 
+.dynamic-text-color{
+    color: royalblue;
+}
+
+form#contact{
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+#contact label{
+    display: block;
+    font-weight: 600;
+}
+
+#contact input:focus{
+    outline: 2px solid green;
+}
+
+#contact input, #contact textarea, #contact button{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+#contact-me{
+    margin-top: 16px;
+}
