@@ -30,13 +30,15 @@
         </ul>
       </nav>
     </section>
-    <header>
+    <header class="header">
       <nav class="default-nav">
+        <section>
         <a href="#about-me">About Me</a>
         <a href="#qualifications">Qualifications</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#technologies">Technologies</a>
         <a href="#contact-me">Contact</a>
+        </section>
       </nav>
       <nav class="mobile-nav">
         <button id="menu-button">Menu</button>
@@ -44,7 +46,7 @@
     </header>
     <main class="container">
       <article class="intro">
-        <img id="profile" src="profile.jpeg" alt="my profile pic" />
+        <img id="profile-image" src="profile2.png" alt="my profile pic" />
         <h1>Hi!! I'm Dawar</h1>
         <p>I am a <span id="dynamic-text" class="dynamic-text-color"></span></p>
         <p class="social">
@@ -56,13 +58,13 @@
           </a>
           <a href="" target="_blank">
             <img
-              src="https://t3.ftcdn.net/jpg/05/42/40/32/240_F_542403252_mcGe9hCcJsgvbekH4AvMHStWX3qEhDBI.jpg"
+              src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
               alt=""
             />
           </a>
           <a href="" target="_blank">
             <img
-              src="https://t3.ftcdn.net/jpg/04/37/88/86/240_F_437888641_XrjjuAwATXWNx10jQurCDaXXJnobhDi4.jpg"
+              src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png"
               alt=""
             />
           </a>
@@ -110,31 +112,40 @@
         </ul>
       </section>
       <hr />
-
       <section id="technologies">
         <h2>Technologies</h2>
-        <table id="table1">
-          <tr>
-            <th>Frontend</th>
-            <th>Backend</th>
-            <th>Database</th>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>Node JS</td>
-            <td>MySQL</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Rails</td>
-            <td>Mongo DB</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Asp.NET</td>
-            <td>Postgres</td>
-          </tr>
-        </table>
+        <section class="container">
+          <section class="card">
+            <header>
+              <h1>Frontend</h1>
+            </header>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+          <section class="card">
+            <header>
+              <h1>Backend</h1>
+            </header>
+            <ul>
+              <!-- <li>Asp.NET</li>
+              <li>Rails</li>
+              <li>Node JS</li> -->
+            </ul>
+          </section>
+          <section class="card">
+            <header>
+              <h1>Database</h1>
+            </header>
+            <ul>
+              <li>MySQL</li>
+              <!-- <li>Mongo DB</li>
+              <li>Postgres</li> -->
+            </ul>
+          </section>
+        </section>
       </section>
     </section>
     <section id="contact-me">
